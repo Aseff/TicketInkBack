@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: asefn
+Build-Jdk: 1.8.0_231
+Implementation-Title: MovieOnlineTicketing
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.company
+Main-Class: ${start-class}
+
