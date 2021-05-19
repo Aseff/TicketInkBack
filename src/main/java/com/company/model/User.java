@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @EqualsAndHashCode
-@NoArgsConstructor
+
 @Table(name = "users", schema = "public")
 public class User implements Serializable {
 
@@ -36,6 +36,9 @@ public class User implements Serializable {
     @Column(name = "email")
     private String email;
 
+    public User() {
+
+    }
     public User(String firstname, String lastname,String password, String email) {
         this.firstname = firstname;
         this.lastname = lastname;
@@ -44,6 +47,11 @@ public class User implements Serializable {
 
     }
 
-
-
+    public User(int id, String firstname, String lastname, String password, String email) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.password = password;
+        this.email = email;
+    }
 }
